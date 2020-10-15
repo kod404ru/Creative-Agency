@@ -1,0 +1,84 @@
+.t 
+  background: white
+
+.t__inner 
+  padding: 67px 0 60px
+  @media (max-width: $md2)
+    padding: 47px 0 40px
+
+.t__title 
+  padding: 72px 0 76px
+  margin: 0 0 67px
+  @media (max-width: $md3)
+    padding: 52px 56px
+
+.title__text 
+
+.t__subtitle 
+  margin: 0 0 69px
+
+.t__row 
+  display: flex
+  margin: 0 -15px
+  @media (max-width: $md2)
+    flex-flow: row wrap
+  @media (max-width: $md3)
+    justify-content: center
+
+.unit-t__wrap 
+  flex: 0 1 25%
+  padding: 0 15px 17px
+  margin: 0 0 40px
+  @media (max-width: $md2)
+    flex: 0 1 50%
+  @media (max-width: $md3)
+    flex: 0 1 65%
+  @media (max-width: $md4)
+    flex: 0 1 90%
+
+.unit-t__inner 
+  position: relative
+  padding: 140% 0 0
+  border: 5px solid white
+  @media (min-width: 992.98px)
+    &:hover
+      border: 5px solid skyblue
+  @media (max-width: $md2)
+    padding: 110% 0 0
+  @media (max-width: $md3)
+    padding: 100% 0 0
+
+.unit-t__link 
+  img 
+    position: absolute  
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.unit-t__label 
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  bottom: -20px
+  width: 80%
+  background: white
+  text-align: center
+  padding: 18px 0 0
+  border-radius: 5px
+  border-top: 3px solid coral
+  cursor: pointer
+
+.unit-t__name 
+  margin: 0 0 8px
+  a
+    color: #11749e
+    font-size: 20px
+    font-weight: 500
+    text-transform: uppercase
+    @extend ._underline
+
+.unit-t__pos 
+  color: #000
+  font-weight: 500

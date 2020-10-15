@@ -1,0 +1,71 @@
+.middle
+  @media (min-width: 768px)
+    display: flex
+
+.middle__content
+  flex: 0 0 100%
+  &--black
+    background: #222222
+  &--white
+    background: #f3f3f3
+    @media (min-width: 768px)
+      position: relative
+      left: -50%
+
+.middle__body
+  width: 50%
+  &--black
+    color: white
+    padding: 109px 119px 114px 0
+  &--white
+    color: #222
+    padding: 109px 0 114px 119px
+    margin: 0 0 0 auto
+  @media (max-width: $md3)
+    width: 100%
+    padding: 50px 20px
+
+.middle__date
+  font-size: 13px
+  margin: 0 0 18px
+  span
+    position: relative
+    margin: 0 24px 0 0
+    &:after
+      content: ''
+      height: 75%
+      width: 1px
+      background: white
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: -13px
+
+.middle__title
+  font-size: 25px
+  font-weight: 500
+  text-transform: uppercase
+  margin: 0 0 43px
+
+.middle__text
+  line-height: 1.6
+  p:first-child
+    margin: 0 0 20px
+
+.middle__img
+  display: none
+  @media (min-width: 768px)
+    display: block
+    position: relative
+    flex: 0 0 50%
+    z-index: 10
+    img
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      object-fit: cover
+    &--black
+      transform: translateX(-100%)
+    &--white

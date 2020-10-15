@@ -1,0 +1,51 @@
+.blue 
+  background: #11749e
+
+.blue__inner 
+  padding: 110px 0 120px
+  display: flex
+  margin: 0 -30px
+  @media (max-width: $md2)
+    padding: 60px 0 70px
+    flex-flow: row wrap    
+
+.blue__unit 
+
+.unit-blue__wrap 
+  flex: 0 1 50%
+  margin: 0 0 30px
+  padding: 0 30px
+  @media (max-width: $md2)
+    flex: 0 1 100%
+
+.unit-blue__inner
+  display: flex
+  @media (max-width: $md2)
+    flex-flow: column nowrap 
+    align-items: flex-start
+
+.unit-blue__img 
+  margin: 0 34px 0 0 
+  padding: 9px 0 0
+  img 
+    width: 69px
+    height: 69px
+    overflow: hidden
+  &--second 
+    @media (max-width: $md2)
+      align-self: flex-end
+  @media (max-width: $md2)
+    margin: 0 0 20px
+    img 
+      width: 49px
+      height: 49px
+
+.unit-blue__text 
+
+.unit-blue__par
+  color: #fff
+  font-size: 15px
+  line-height: 1.6
+  @media (max-width: $md2)
+    p
+      text-align: justify

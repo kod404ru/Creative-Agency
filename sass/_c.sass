@@ -1,0 +1,135 @@
+.c 
+  background: url(../img/c/bg.jpg)no-repeat center / cover black
+
+.c__inner 
+  padding: 144px 0 100px
+  @media (max-width: $md2)
+    padding: 104px 0 60px
+  @media (max-width: $md3)
+    padding: 34px 0 20px
+
+.c__title 
+  color: white
+  padding: 80px 0 74px
+  margin: 0 0 76px
+  @media (max-width: $md2)
+    padding: 60px 0 54px
+
+.form-c 
+  display: flex
+  flex-flow: row wrap
+  margin: 0 -15px
+  @media (max-width: $md3)
+    padding: 0 20px
+
+.form-c__unit
+  flex: 0 1 33.333%
+  padding: 0 15px
+  margin: 0 0 40px
+  &--message
+    flex: 0 1 100%
+    margin: 0 0 46px
+  @media (max-width: $md3)
+    flex: 0 1 100%
+
+.form-c__input
+  width: 100%
+  height: 48px
+  background: none
+  border: 1px solid white
+  color: #fff
+  letter-spacing: 0.3px
+  padding: 0 22px
+  border-radius: .5em
+  cursor: pointer
+  &--message
+    min-height: 151px
+    padding: 22px
+    resize: none
+  // @media (min-width: 992.98px)
+  //   &:hover
+  //     box-shadow: 0 0 15px 0 lightgray
+  //     transition: all .2s linear
+
+.form-hover-border
+  border: 2px solid skyblue
+
+.form-error
+  border: 2px solid coral
+  color: coral 
+
+.form-c__btn 
+  margin: 0 auto 
+  position: relative 
+  &:before
+    content: ''
+    height: 3px
+    width: 0
+    background: coral
+    position: absolute
+    top: 0
+    left: 0
+  &:after
+    content: ''
+    height: 3px
+    width: 0
+    background: coral
+    position: absolute
+    bottom: 0
+    right: 0
+  @media (min-width: 992.98px)
+    &:hover
+      &:before 
+        width: 100%
+        transition: all .4s linear
+      &:after 
+        width: 100%
+        transition: all .4s linear
+      span 
+        color: coral
+        transition: all .4s linear
+        &:before
+          height: 100%
+          transition: all .3s linear
+        &:after
+          height: 100%
+          transition: all .3s linear
+  @media (max-width: $md3)
+    flex: 0 1 100%
+
+
+.form-c__btn-unit
+  background: transparent
+  span
+    color: #fff
+    font-size: 24px
+    font-weight: 500
+    background: #11749e
+    padding: .9em 2.5em
+    display: inline-block
+    &:before
+      content: ''
+      height: 0
+      width: 3px
+      background: coral
+      position: absolute
+      bottom: 0
+      left: 0
+    &:after
+      content: ''
+      height: 0
+      width: 3px
+      background: coral
+      position: absolute
+      top: 0
+      right: 0
+  @media (max-width: $md3)
+    width: 100%
+    padding: 0 20px
+    span 
+      width: 100%
+      font-size: 18px
+    
+
+
+

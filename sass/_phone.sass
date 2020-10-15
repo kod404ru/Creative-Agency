@@ -1,0 +1,99 @@
+.phone 
+  background: url(../img/phone/bg.jpg)no-repeat center / cover black
+
+.phone__inner 
+  padding: 92px 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @media (max-width: $md3)
+    padding: 42px 0
+
+.phone__text 
+  color: #fff
+  flex: 0 1 471px
+  @media (max-width: $md2)
+    flex: 0 1 400px
+  @media (max-width: $md3)
+    flex: 0 1 100%
+
+.phone__title 
+  font-size: 25px
+  font-weight: 500
+  text-transform: uppercase
+  margin: 0 0 41px
+  @media (max-width: $md2)
+    margin: 0 0 20px
+  @media (max-width: $md3)
+    text-align: center
+
+.phone__par 
+  line-height: 1.6
+  margin: 0 0 68px
+  @media (max-width: $md2)
+    margin: 0 0 50px
+  @media (max-width: $md3)
+    text-align: justify
+
+.phone__spec 
+
+.spec-phone__unit 
+  font-weight: 500
+  text-transform: uppercase
+  display: inline-block
+  background: #11749e
+  cursor: pointer
+  position: relative
+  padding: 13px 0 13px 19px
+  border-radius: .4em
+  span 
+    position: relative
+    z-index: 2
+  &:after
+    content: ''
+    height: 100%
+    width: 0
+    position: absolute
+    top: 0
+    left: 0
+    background: rgba(0, 0, 0, .5)
+  @media (min-width: 992.98px)
+    &:hover
+      &:after
+        width: 100%
+        transition: all .4s linear
+  @media (max-width: $md2)
+    padding: 12px 19px
+  @media (max-width: $md3)
+    display: block
+    text-align: center
+
+.spec-phone__unit--first 
+  margin: 0 0 24px
+  padding-right: 135px
+  @media (max-width: $md2)
+    padding-right: 115px 
+  @media (max-width: $md3)
+    padding-right: 0
+
+.spec-phone__unit--second 
+  margin: 0 0 24px
+  padding-right: 219px
+  @media (max-width: $md2)
+    padding-right: 135px
+  @media (max-width: $md3)
+    padding-right: 0
+
+.spec-phone__unit--third 
+  padding-right: 159px
+  @media (max-width: $md2)
+    padding-right: 110px
+  @media (max-width: $md3)
+    padding-right: 0 
+
+.phone__img 
+  img 
+    @media (max-width: $md2)
+      width: 250px
+    @media (max-width: $md3)
+      display: none

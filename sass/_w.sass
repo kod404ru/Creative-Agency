@@ -1,0 +1,87 @@
+.w 
+  background: #11749e
+
+.w__inner 
+  padding: 100px 0 90px
+  width: 100%
+  max-width: 1163px
+  margin: 0 auto
+  @media (max-width: $md2)
+    padding: 75px 0 60px
+  @media (max-width: $md3)
+    padding: 35px 0 30px
+
+.w__title 
+  padding: 72px 0 76px
+  color: #fff
+  margin: 0 0 68px
+  @media (max-width: $md3)
+    padding: 52px 0 56px
+    margin: 0 0 45px
+
+.w__row 
+  display: flex
+  flex-flow: row wrap
+  margin: 0 -21px
+
+.col-w
+  flex: 0 1 25%
+  padding: 0 21px
+  margin: 0 0 38px
+  @media (max-width: $md1)
+    flex: 0 1 50%
+  @media (max-width: $md2)
+    flex: 0 1 100%
+
+.col-w__inner 
+  display: flex
+  flex-flow: column nowrap 
+  align-items: center
+  @media (max-width: $md1)
+    flex-flow: row nowrap
+    align-items: flex-start
+
+.col-w__img-block 
+  margin: 0 0 24px
+  @media (max-width: $md1)
+    margin: 0 20px 0 0
+  @media (max-width: $md4)
+    display: none
+
+.col-w__img-link 
+  width: 133px
+  height: 133px
+  background: #2e85aa
+  border-radius: 50%
+  display: inline-block
+  overflow: hidden
+  display: flex
+  img 
+    margin: auto
+  @media (max-width: $md1)
+    width: 90px
+    height: 90px
+  @media (max-width: $md2)
+    width: 70px
+    height: 70px
+
+.col-w__text
+
+.col-w__title 
+  font-size: 18px
+  font-weight: 500
+  text-transform: uppercase
+  height: 33px
+  text-align: center
+  margin: 0 0 5px
+  overflow: hidden
+  a 
+    color: #fff
+    @extend ._underline
+  @media (max-width: $md1)
+    text-align: left
+
+.col-w__par 
+  color: #fff
+  font: 15px/1.6 $ffm
+  text-align: justify

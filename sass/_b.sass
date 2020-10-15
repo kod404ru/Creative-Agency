@@ -1,0 +1,83 @@
+.b 
+  background: white
+
+.b__inner 
+  width: 100%
+  max-width: 1169px
+  margin: 0 auto
+  padding: 92px 0 80px
+  @media (max-width: $md3)
+    padding: 32px 0 20px
+
+.b__title 
+  padding: 72px 0 76px
+  margin: 0 0 39px
+  @media (max-width: $md3)
+    padding: 52px 0 56px
+    margin: 0 0 25px
+
+.b__subtitle 
+  margin: 0 0 75px
+  @media (max-width: $md3)
+    margin: 0 0 55px
+
+.b__row 
+  display: flex
+  margin: 0 -15px
+  @media (max-width: $md2)
+    flex-flow: row wrap
+  @media (max-width: $md3)
+    justify-content: center
+
+.b__unit 
+
+.unit-b__wrap
+  flex: 0 1 25%
+  padding: 0 15px 
+  margin: 0 0 30px
+  @media (max-width: $md2)
+    flex: 0 1 50%
+  @media (max-width: $md3)
+    flex: 0 1 70%
+  @media (max-width: $md4)
+    flex: 0 1 90%
+
+.unit-b__inner 
+
+.unit-b__img 
+  margin: 0 0 30px
+  padding: 110% 0 0
+  position: relative
+  overflow: hidden
+
+.unit-b__img-link 
+  img 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    @media (min-width: 992.98px)
+      &:hover
+        transform: scale(1.2)
+        transition: all .2s linear
+
+.unit-b__text 
+  text-align: center
+
+.unit-b__title 
+  height: 40px
+  overflow: hidden
+  a
+    color: #11749e
+    font-size: 18px
+    font-weight: 500
+    text-transform: uppercase
+    line-height: 1.2
+    @extend ._underline
+
+.unit-b__paragraph 
+  color: #222
+  font-size: 15px
+  line-height: 1.6
